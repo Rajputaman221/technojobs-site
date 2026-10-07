@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} | TechnoJobs{% endblock %}
+{% block main %}
+<h1>{{ title }}</h1>
+{% for p in items %}<a class="card" href="/{{ p.type }}/{{ p.slug }}/"><b>{{ p.headline }}</b><span>{{ p.description }}</span><small>{{ p.date }}</small></a>
+{% else %}<p>No pages yet.</p>{% endfor %}
+{% endblock %}

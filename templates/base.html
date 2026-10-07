@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}TechnoJobs{% endblock %}</title>
+{% block head %}{% endblock %}
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="nav-in">
+  <a class="logo" href="/">Techno<span>Jobs</span></a>
+  {% for key, label in nav %}<a href="/{{ key }}/">{{ label }}</a>{% endfor %}
+</div></header>
+<main class="wrap">{% block main %}{% endblock %}</main>
+<footer class="foot">TechnoJobs.online. Always check official company websites before you apply.</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+name: Generate pages
+on:
+  schedule:
+    - cron: "30 2 * * *"        # every day (UTC)
+  push:
+    paths: ["topics.json"]      # when you add a topic
+  workflow_dispatch:            # "Run workflow" button
+    inputs:
+      topic:
+        description: "New topic (optional)"
+        required: false
+      type:
+        description: "articles, news or questions"
+        default: "articles"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Add topic from button
+        if: ${{ github.event.inputs.topic != '' }}
+        env:
+          TOPIC: ${{ github.event.inputs.topic }}
+          TYPE: ${{ github.event.inputs.type }}
+        run: |
+          python - <<'PY'
+          import json, os
+          t = json.load(open("topics.json"))
+          t.append({"title": os.environ["TOPIC"], "type": os.environ["TYPE"]})
+          json.dump(t, open("topics.json", "w"), indent=2)
+          PY
+      - name: Write and build pages
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: https://www.technojobs.online
+        run: python generate.py
+      - name: Save new content
+        run: |
+          git config user.name "page-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add topics.json data/content
+          git diff --staged --quiet || (git commit -m "New pages" && git push)

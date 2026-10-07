@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ p.headline }} | TechnoJobs{% endblock %}
+{% block head %}
+<meta name="description" content="{{ p.description }}">
+<link rel="canonical" href="{{ site_url }}/{{ p.type }}/{{ p.slug }}/">
+{% for j in ld %}<script type="application/ld+json">{{ j | safe }}</script>
+{% endfor %}
+{% endblock %}
+{% block main %}
+<div class="grid">
+<article>
+  <nav class="crumb"><a href="/">Home</a> › <a href="/{{ p.type }}/">{{ section }}</a> › {{ p.title }}</nav>
+  <h1>{{ p.headline }}</h1>
+  <p class="by">By <b>TechnoJobs Team</b> · Updated {{ p.date }}</p>
+  <p class="intro">{{ p.intro }}</p>
+  <div class="hero"><h2>{{ p.title }}</h2><span class="pill">Complete Guide 2026</span></div>
+  <div class="toc"><h3>Table of Contents</h3>
+    {% for s in p.sections %}<a href="#s{{ loop.index }}"><i>{{ loop.index }}</i>{{ s.heading }}</a>{% endfor %}
+    {% if p.faqs %}<a href="#faq"><i>{{ p.sections|length + 1 }}</i>Frequently Asked Questions</a>{% endif %}
+  </div>
+  {% if p.quick_facts %}<div class="facts"><b>Quick Facts</b>{% for f in p.quick_facts %}<div><b>{{ f.label }}:</b> {{ f.value }}</div>{% endfor %}</div>{% endif %}
+  {% for s in p.sections %}<h2 id="s{{ loop.index }}">{{ loop.index }}. {{ s.heading }}</h2>{{ s.html | safe }}{% endfor %}
+  {% if p.faqs %}<h2 id="faq">Frequently Asked Questions</h2>
+  {% for f in p.faqs %}<h3>{{ f.q }}</h3><p>{{ f.a }}</p>{% endfor %}{% endif %}
+</article>
+<aside>
+  <div class="box green"><h3>Key Highlights</h3><ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul></div>
+  {% if jobs %}<div class="box"><h3>Latest Jobs</h3>{% for j in jobs %}
+    <div class="job"><span>{{ j.title }}<small>{{ j.company }} | {{ j.location }}</small></span><a class="apply" href="{{ j.url }}" rel="nofollow">Apply</a></div>{% endfor %}</div>{% endif %}
+  {% if related %}<div class="box"><h3>Related Articles</h3>{% for r in related %}
+    <a class="rel" href="/{{ r.type }}/{{ r.slug }}/">{{ r.headline }}<small>{{ r.date }}</small></a>{% endfor %}</div>{% endif %}
+</aside>
+</div>
+{% endblock %}
