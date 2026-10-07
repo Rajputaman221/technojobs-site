@@ -15,7 +15,7 @@ OUT = ROOT / "site"
 DEMO = "--demo" in sys.argv
 CLAUDE_KEY = os.environ.get("ANTHROPIC_API_KEY")
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 HAS_KEY = bool(CLAUDE_KEY or GEMINI_KEY)
 SECTIONS = {"articles": "Guides", "news": "News", "questions": "Questions"}
 
