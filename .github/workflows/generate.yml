@@ -36,7 +36,7 @@ jobs:
           PY
       - name: Write and build pages
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+                  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SITE_URL: https://www.technojobs.online
         run: python generate.py
       - name: Save new content
