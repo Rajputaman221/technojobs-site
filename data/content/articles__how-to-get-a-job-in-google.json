@@ -1,0 +1,78 @@
+{
+  "headline": "How to Get a Job at Google: A Guide for Freshers in India",
+  "description": "Learn how freshers and college students in India can prepare, apply, and clear interviews for technical and non-technical roles at Google.",
+  "intro": "Landing a job at Google is a dream for many engineering and business students in India. While the selection process is rigorous, success comes down to consistent preparation, strong fundamentals, and knowing the right application channels. Whether through on-campus recruitment, student internships, or off-campus openings on Google Careers, freshers have clear paths to enter the company. This guide provides actionable advice on how to build your profile, navigate the interview stages, and land an entry-level position.",
+  "highlights": [
+    "Explore multiple entry paths including campus drives, Google Careers, and internships.",
+    "Master Data Structures and Algorithms for software engineering roles.",
+    "Build a clean, one-page resume highlighting real projects and measurable impact.",
+    "Prepare for behavioral rounds evaluated on general cognitive ability and Googleyness.",
+    "Leverage employee referrals and open coding challenges to get shortlisted."
+  ],
+  "quick_facts": [
+    {
+      "label": "Major Indian Offices",
+      "value": "Bengaluru, Hyderabad, Gurugram, Mumbai, Pune"
+    },
+    {
+      "label": "Primary Portal",
+      "value": "Google Careers (careers.google.com)"
+    },
+    {
+      "label": "Popular Fresher Roles",
+      "value": "Software Engineer, Associate Account Strategist, Intern"
+    },
+    {
+      "label": "Core Evaluation Pillars",
+      "value": "Coding skills, problem-solving, and Googleyness"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Application Channels for Freshers in India",
+      "html": "<p>Students and fresh graduates in India can enter Google through multiple pathways:</p><ul><li>Campus Placements: Google visits selected engineering and business institutes across India for direct on-campus hiring drives.</li><li>Google Careers Portal: Search and filter entry-level jobs and student internships, then apply directly with your resume.</li><li>Employee Referrals: Connect with alumni or working Googlers on professional networks to request an internal referral for open job IDs.</li><li>Student Programs and Hackathons: Google hosts global and regional coding events and mentorship programs that recruiters monitor for top talent.</li></ul>"
+    },
+    {
+      "heading": "The Google Hiring and Interview Process",
+      "html": "<p>The standard hiring process for entry-level roles involves several structured stages:</p><ul><li>Resume Screening: Recruiters assess your resume against the basic qualifications and project requirements of the role.</li><li>Online Assessments: Technical roles often start with timed coding tests focused on algorithmic problem-solving.</li><li>Virtual Interview Rounds: Candidates typically face multiple rounds assessing core computer science fundamentals or domain-specific skills.</li><li>Hiring Committee Review: Interviewers submit written feedback to an independent committee that evaluates performance objectively.</li></ul>"
+    },
+    {
+      "heading": "Preparing for Software Engineering Roles",
+      "html": "<p>Software Engineering (SWE) is the most sought-after profile for freshers, requiring deep technical fundamentals:</p><ul><li>Data Structures and Algorithms: Build strong command over arrays, strings, trees, graphs, dynamic programming, and recursion.</li><li>Regular Problem-Solving Practice: Solve algorithmic problems on platforms like LeetCode and HackerRank to build speed and accuracy.</li><li>Clear Communication: Practice explaining your approach, edge cases, and time/space complexity out loud while coding.</li><li>Core CS Concepts: Review operating systems, database management systems, and object-oriented design fundamentals.</li></ul>"
+    },
+    {
+      "heading": "Non-Technical Roles for Freshers",
+      "html": "<p>Google also hires fresh graduates from diverse academic backgrounds for business and operational roles:</p><ul><li>Common Profiles: Entry-level openings include Associate Account Strategist, customer solutions, and digital operations roles.</li><li>Key Competencies: Recruiters look for data interpretation skills, clear communication, problem-solving, and customer empathy.</li><li>Product Awareness: Gain working knowledge of Google products like Google Ads, Google Cloud, and Android ecosystem tools.</li><li>Case Studies: Prepare to solve realistic business scenarios and demonstrate how you organize unstructured problems.</li></ul>"
+    },
+    {
+      "heading": "Acing the Googleyness and Behavioral Rounds",
+      "html": "<p>Google places significant emphasis on cultural compatibility and leadership through its Googleyness evaluation:</p><ul><li>STAR Method: Frame behavioral answers by describing the Situation, Task, Action, and Result clearly.</li><li>Navigating Ambiguity: Demonstrate how you take initiative and solve problems even when instructions are incomplete.</li><li>Intellectual Humility: Show openness to feedback, readiness to learn from mistakes, and respect for diverse viewpoints.</li><li>Team Collaboration: Highlight your ability to work smoothly in cross-functional groups and support your peers.</li></ul>"
+    },
+    {
+      "heading": "Writing a Resume That Gets Shortlisted",
+      "html": "<p>Your resume is your initial opportunity to make a strong impression on recruiters:</p><ul><li>Stick to One Page: Keep your resume concise, well-structured, and easy to read for recruiters.</li><li>Highlight Measurable Outcomes: Describe project achievements using clear metrics rather than generic task descriptions.</li><li>Include Relevant Links: Add direct links to your GitHub profile, portfolio, or live web applications.</li><li>Align with the Job Description: Incorporate relevant keywords and technical stacks mentioned in the official listing.</li></ul>"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can freshers from non-tier-1 colleges in India get a job at Google?",
+      "a": "Yes. Students from any recognized college can apply via the Google Careers portal, referral programs, or internships. Strong problem-solving and technical skills carry the most weight in the evaluation."
+    },
+    {
+      "q": "Does Google hire fresh graduates for non-engineering roles?",
+      "a": "Yes. Google hires graduates for business, digital marketing, account management, and support roles, such as the Associate Account Strategist position based in Indian offices like Hyderabad and Gurugram."
+    },
+    {
+      "q": "Is competitive programming necessary to clear technical interviews at Google?",
+      "a": "Competitive programming is not mandatory, but a deep foundation in Data Structures and Algorithms is essential. Practicing algorithmic challenges helps you think clearly under time constraints."
+    },
+    {
+      "q": "How long does the Google recruitment process take for freshers?",
+      "a": "Hiring timelines vary based on team requirements and application volume. The process typically takes between a few weeks to a few months from initial screening to an offer decision."
+    }
+  ],
+  "title": "How to get a job in Google",
+  "type": "articles",
+  "slug": "how-to-get-a-job-in-google",
+  "date": "2026-10-10"
+}
